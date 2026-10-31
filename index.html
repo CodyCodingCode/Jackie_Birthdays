@@ -451,44 +451,58 @@ const starter = [
   {
     id: 1,
     type: "truthlie",
-    from: "Sarah",
+    from: "Leon",
     question: "Two truths and a lie about Sarah",
     options: [
-      "She once missed a flight",
-      "She can solve a Rubik's cube",
-      "She has never had bubble tea"
+      "I am your eldest son",
+      "We went to a bbno$ concert",
+      "I am stronger than you"
     ],
-    correct: 2
+    correct: 3
   },
   {
     id: 2,
     type: "who_said",
-    from: "Alex",
-    question: "Favorite moment with Jackie?",
-    answer: "That late-night drive when we got lost and couldn't stop laughing.",
+    from: "Leon",
+    question: "What's the most embarrassing thing you've witnessed Jackie do?",
+    answer: "Nothing - she is perfect 24/7, 365 🤩",
     people: allPeople,
-    correctPerson: "Maya"
+    correctPerson: "Leon"
   },
   {
     id: 3,
-    type: "truthlie",
-    from: "Maya",
-    question: "Two truths and a lie about Maya",
-    options: [
-      "She has run a half marathon",
-      "She hates fries",
-      "She can fall asleep anywhere"
-    ],
-    correct: 1
+    type: "who_said",
+    from: "Leon",
+    question: "What's the weirdest thing Jackie has ever said to you?",
+    answer: "Do a Hitler salute 🫡",
+    correctPerson: "Leon"
   },
   {
     id: 4,
     type: "who_said",
-    from: "Jordan",
-    question: "What's a small thing Jackie does that makes you happy?",
-    answer: "She remembers tiny details people mention once.",
+    from: "Leon",
+    question: "What's your favorite memory with Jackie?",
+    answer: "Welland 2023 - she looked so proud 🥹",
     people: allPeople,
-    correctPerson: "Jordan"
+    correctPerson: "Leon"
+  },
+    {
+    id: 4,
+    type: "who_said",
+    from: "Leon",
+    question: "What's your favorite memory with Jackie?",
+    answer: "Welland 2023 - she looked so proud 🥹",
+    people: allPeople,
+    correctPerson: "Leon"
+  } ,
+  {
+    id: 5,
+    type: "who_said",
+    from: "Leon",
+    question: "What's something Jackie did for you that you'll never forget?",
+    answer: "Held me as I suffered through a calf cramp 😭",
+    people: allPeople,
+    correctPerson: "Leon"
   }
 ];
       let questions = loadQuestions(),
