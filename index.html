@@ -428,12 +428,69 @@
     <div id="toast" class="toast hidden"></div><div id="artifactModal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><div class="row"><h2 id="artifactTitle"></h2><button class="secondary" data-action="close-artifact" aria-label="Close image">Close</button></div><img id="artifactImage" alt="A photo memory"></div></div>
     <script>
       const KEY = "her-lore-questions-v2";
-      const starter = [
-        { id: 1, type: "truthlie", from: "Sarah", question: "Two truths and a lie about Sarah", options: ["She once missed a flight", "She can solve a Rubik's cube", "She has never had bubble tea"], correct: 2, explanation: "Sarah has absolutely had bubble tea." },
-        { id: 2, type: "who_said", from: "Alex", question: "Favorite moment with Jackie?", answer: "That late-night drive when we got lost and couldn't stop laughing.", people: ["Alex", "Maya", "Jordan", "Sam"], correctPerson: "Maya", explanation: "A core memory." },
-        { id: 3, type: "truthlie", from: "Maya", question: "Two truths and a lie about Maya", options: ["She has run a half marathon", "She hates fries", "She can fall asleep anywhere"], correct: 1, explanation: "Nobody hates fries. Surely." },
-        { id: 4, type: "who_said", from: "Jordan", question: "What's a small thing Jackie does that makes you happy?", answer: "She remembers tiny details people mention once.", people: ["Jordan", "Alex", "Maya", "Sam"], correctPerson: "Jordan", explanation: "They notice the little things." }
-      ];
+const allPeople = [
+  "Derek",
+  "Elaine",
+  "Erin",
+  "Hailey",
+  "James",
+  "Jenn",
+  "Kam",
+  "Kat",
+  "Kelvin",
+  "Leon",
+  "Margaret",
+  "Meaghan",
+  "Nicole",
+  "Sara",
+  "Sarina",
+  "Scully"
+];
+
+const starter = [
+  {
+    id: 1,
+    type: "truthlie",
+    from: "Sarah",
+    question: "Two truths and a lie about Sarah",
+    options: [
+      "She once missed a flight",
+      "She can solve a Rubik's cube",
+      "She has never had bubble tea"
+    ],
+    correct: 2
+  },
+  {
+    id: 2,
+    type: "who_said",
+    from: "Alex",
+    question: "Favorite moment with Jackie?",
+    answer: "That late-night drive when we got lost and couldn't stop laughing.",
+    people: allPeople,
+    correctPerson: "Maya"
+  },
+  {
+    id: 3,
+    type: "truthlie",
+    from: "Maya",
+    question: "Two truths and a lie about Maya",
+    options: [
+      "She has run a half marathon",
+      "She hates fries",
+      "She can fall asleep anywhere"
+    ],
+    correct: 1
+  },
+  {
+    id: 4,
+    type: "who_said",
+    from: "Jordan",
+    question: "What's a small thing Jackie does that makes you happy?",
+    answer: "She remembers tiny details people mention once.",
+    people: allPeople,
+    correctPerson: "Jordan"
+  }
+];
       let questions = loadQuestions(),
         usedArtifacts = new Set(),
         answers = {},
