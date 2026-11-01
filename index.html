@@ -429,21 +429,31 @@
     <script>
       const KEY = "her-lore-questions-v2";
 const allPeople = [
+  "Angelli",
+  "Arthur",
   "Derek",
   "Elaine",
   "Erin",
+  "Derek",
+  "Glory",
   "Hailey",
   "James",
+  "Jason Wen",
   "Jenn",
-  "Kam",
+  "Jenny",
+  "John",
+  "Kamini",
   "Kat",
   "Kelvin",
+  "Leah",
   "Leon",
   "Margaret",
   "Meaghan",
   "Nicole",
+  "Oliver",
   "Sara",
   "Sarina",
+  "Simon",
   "Scully"
 ];
 
@@ -480,6 +490,17 @@ const starter = [
       "You can outrun a machine."
     ],
     correct: 0
+  },
+  {
+    id: 111,
+    type: "truthlie",
+    from: "Simon",
+    options: [
+      "You're younger than me",
+      "People think you're younger than me",
+      "You're barely a millennial"
+    ],
+    correct: 1
   },
   {
     id: 2,
@@ -557,9 +578,17 @@ const starter = [
     id: 3333,
     type: "who_said",
     question: "What's the weirdest thing Jackie has ever said to you?",
-    answer: "'No' when I offered her food (but she proceeded to eat it anyway). ",
+    answer: "'No' when I offered her food (but she proceeded to eat it anyway).",
     people: allPeople,
     correctPerson: "Leah"
+  },
+  {
+    id: 33333,
+    type: "who_said",
+    question: "What's the weirdest thing Jackie has ever said to you?",
+    answer: "that's the ultimate sex noise machine though are you kidding me uh uh uh uh uh (I randomly scrolled to that in my chat history)",
+    people: allPeople,
+    correctPerson: "Simon"
   },
   {
     id: 4,
@@ -618,6 +647,14 @@ const starter = [
     correctPerson: "Leah"
   },
   {
+    id: 44444444,
+    type: "who_said",
+    question: "What's your favorite memory with Jackie?",
+    answer: "when jackie had to spill the tea on 'Jody' on public transit",
+    people: allPeople,
+    correctPerson: "Simon"
+  },
+  {
     id: 5,
     type: "who_said",
     question: "What's something Jackie did for you that you'll never forget?",
@@ -664,6 +701,14 @@ const starter = [
     answer: "Given me the joy of mentoring a pupil and seeing them succeed.",
     people: allPeople,
     correctPerson: "James"
+  },
+  {
+    id: 5555555,
+    type: "who_said",
+    question: "What's something Jackie did for you that you'll never forget?",
+    answer: "Bringing the team together when we were in Hualien and ensuring everyone was welcome and included.",
+    people: allPeople,
+    correctPerson: "Simon"
   },
   {
     id: 6,
@@ -720,6 +765,14 @@ const starter = [
     answer: "animated, voracious, tea-spiller",
     people: allPeople,
     correctPerson: "Leah"
+  },
+  {
+    id: 66666666,
+    type: "who_said",
+    question: "Describe Jackie in three words.",
+    answer: "Cackle. Competitive. Considerate",
+    people: allPeople,
+    correctPerson: "Simon"
   },
   {
     id: 7,
@@ -786,6 +839,14 @@ const starter = [
     correctPerson: "James"
   },
   {
+    id: 8888,
+    type: "who_said",
+    question: "What's something Jackie probably doesn't know about you?",
+    answer: "I was the easter bunny once for a family easter event for the City of Burnaby",
+    people: allPeople,
+    correctPerson: "Simon"
+  },
+  {
     id: 9,
     type: "who_said",
     question: "Is it true that you're a korean princess? I have photo evidence!",
@@ -800,6 +861,14 @@ const starter = [
     answer: "Hamster or bad hamster. I think there are more.",
     people: allPeople,
     correctPerson: "Leah"
+  },
+  {
+    id: 999,
+    type: "who_said",
+    question: "Would you rather adopt Pippin or Jasper?",
+    answer: "",
+    people: allPeople,
+    correctPerson: "Simon"
   },
   {
     id: 0,
