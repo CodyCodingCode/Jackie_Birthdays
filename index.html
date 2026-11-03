@@ -645,6 +645,7 @@ body::after {
       const allPeople = [
         "Angelli",
         "Arthur",
+        "Caron",
         "Derek",
         "Elaine(LL)",
         "Elaine(fellowship)",
@@ -662,19 +663,21 @@ body::after {
         "Kelvin",
         "Leah",
         "Leon",
-        "Margaret",
+        "Margaret", 
         "Meaghan",
         "Nicole",
         "Oliver",
+        "RC",
         "Sara",
         "Sarina",
         "Simon",
         "Scully",
+        "Yibo"
       ];
 
       const starter = [
         {
-          id: 1,
+          id: 1(1),
           type: "truthlie",
           from: "Leon",
           options: [
@@ -685,7 +688,7 @@ body::after {
           correct: 2,
         },
         {
-          id: 11,
+          id: 1(2),
           type: "truthlie",
           from: "Kevin",
           options: [
@@ -696,7 +699,7 @@ body::after {
           correct: 1,
         },
         {
-          id: 111,
+          id: 1(3),
           type: "truthlie",
           from: "James",
           options: [
@@ -707,7 +710,7 @@ body::after {
           correct: 0,
         },
         {
-          id: 111,
+          id: 1(4),
           type: "truthlie",
           from: "Simon",
           options: [
@@ -718,7 +721,7 @@ body::after {
           correct: 1,
         },
         {
-          id: 1111,
+          id: 1(5),
           type: "truthlie",
           from: "Judy",
           options: [
@@ -729,7 +732,7 @@ body::after {
           correct: 2,
         },
         {
-          id: 11111,
+          id: 1(6),
           type: "truthlie",
           from: "Elaine(LL)",
           options: [
@@ -740,7 +743,7 @@ body::after {
           correct: 1,
         },
         {
-          id: 111111,
+          id: 1(7),
           type: "truthlie",
           from: "Angelli",
           options: [
@@ -751,7 +754,7 @@ body::after {
           correct: 0,
         },
         {
-          id: 11111111,
+          id: 1(8),
           type: "truthlie",
           from: "Jason Wen",
           options: [
@@ -762,7 +765,51 @@ body::after {
           correct: 0,
         },
         {
-          id: 2,
+          id: 1(9),
+          type: "truthlie",
+          from: "Derek",
+          options: [
+            "I'm pretty sure Jackie's muted the captains chat (respect)",
+            "I feel like Jackie would fight to defend my honour",
+            "Jackie has convinced me of the magic of zone two running.",
+          ],
+          correct: 2,
+        },
+        {
+          id: 1(10),
+          type: "truthlie",
+          from: "RC",
+          options: [
+            "Jackie's nickname is Hamster because she's always full of energy, just like a little hamster!",
+            "Someone once called Jackie “Youngster” because she was so young, but Kam misheard it as “Hamster.” The nickname stuck, and we've been calling her Hamster ever since!",
+            ""
+          ],
+          correct: 0,
+        },
+        {
+          id: 1(11),
+          type: "truthlie",
+          from: "John",
+          options: [
+            "Your real name is Jackie",
+            "Your real name is Jacqueline",
+            "Your real name is Jacqwelland",
+          ],
+          correct: 1,
+        },
+        {
+          id: 1(12),
+          type: "truthlie",
+          from: "Caron",
+          options: [
+            "I have many photos of you, some which you may not even know of",
+            "I've had nightmares where I sleep talk out loud yelling at you",
+            "I've read all the fics you sent me",
+          ],
+          correct: 0,
+        },
+        {
+          id: 2(1),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -771,7 +818,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 22,
+          id: 2(2),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -780,7 +827,7 @@ body::after {
           correctPerson: "Kevin",
         },
         {
-          id: 222,
+          id: 2(3),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -790,7 +837,7 @@ body::after {
           correctPerson: "Caitlyn",
         },
         {
-          id: 2222,
+          id: 2(4),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -799,7 +846,7 @@ body::after {
           correctPerson: "Arthur",
         },
         {
-          id: 22222,
+          id: 2(5),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -808,7 +855,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 222222,
+          id: 2(6),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -817,7 +864,7 @@ body::after {
           correctPerson: "Leah",
         },
         {
-          id: 2222222,
+          id: 2(7),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -827,7 +874,7 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 2222222,
+          id: 2(8),
           type: "who_said",
           question:
             "What's the most embarrassing thing you've witnessed Jackie do?",
@@ -837,7 +884,67 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 3,
+          id: 2(9),
+          type: "who_said",
+          question:
+            "What's the most embarrassing thing you've witnessed Jackie do?",
+          answer:
+            "Talking to Kamini at Vessi while having noticeable hickeys.",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 2(10),
+          type: "who_said",
+          question:
+            "What's the most embarrassing thing you've witnessed Jackie do?",
+          answer:
+            "After oversleeping and missing a dragon boat practice, she wrote “I will never be late” on the ground.  Of corse, she was late for the next DB practice.",
+          people: allPeople,
+          correctPerson: "RC",
+        },
+        {
+          id: 2(11),
+          type: "who_said",
+          question:
+            "What's the most embarrassing thing you've witnessed Jackie do?",
+          answer:
+            "May 26, 2018 Women's Regatta. Jackie showed up hours late and had to write in large letters with chalk on the dock 'I will never be late again.' That obviously didn't work.",
+          people: allPeople,
+          correctPerson: "Jenn",
+        },
+        {
+          id: 2(12),
+          type: "who_said",
+          question:
+            "What's the most embarrassing thing you've witnessed Jackie do?",
+          answer:
+            "Almost throwing Cody out of the coach boat when accelerating away from the dock.",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 2(13),
+          type: "who_said",
+          question:
+            "What's the most embarrassing thing you've witnessed Jackie do?",
+          answer:
+            "Drop her food/lunch",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 2(14),
+          type: "who_said",
+          question:
+            "What's the most embarrassing thing you've witnessed Jackie do?",
+          answer:
+            "Probably walk into class late with a gigantic bag that looks like it held weaponry (it was her paddle)",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 3(1),
           type: "who_said",
           question: "What's the weirdest thing Jackie has ever said to you?",
           answer: "Do a Hitler salute 🫡",
@@ -845,7 +952,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 33,
+          id: 3(2),
           type: "who_said",
           question: "What's the weirdest thing Jackie has ever said to you?",
           answer: "Basically everything she says",
@@ -853,7 +960,7 @@ body::after {
           correctPerson: "Arthur",
         },
         {
-          id: 333,
+          id: 3(3),
           type: "who_said",
           question: "What's the weirdest thing Jackie has ever said to you?",
           answer: "I'm gonna bike to all the costcos in the lower mainland....",
@@ -861,7 +968,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 3333,
+          id: 3(3),
           type: "who_said",
           question: "What's the weirdest thing Jackie has ever said to you?",
           answer:
@@ -870,7 +977,7 @@ body::after {
           correctPerson: "Leah",
         },
         {
-          id: 33333,
+          id: 3(4),
           type: "who_said",
           question: "What's the weirdest thing Jackie has ever said to you?",
           answer:
@@ -879,7 +986,7 @@ body::after {
           correctPerson: "Simon",
         },
         {
-          id: 333333,
+          id: 3(5),
           type: "who_said",
           question: "What's the weirdest thing Jackie has ever said to you?",
           answer:
@@ -888,7 +995,52 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 4,
+          id: 3(6),
+          type: "who_said",
+          question: "What's the weirdest thing Jackie has ever said to you?",
+          answer:
+            "Live laugh toaster bath",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 3(7),
+          type: "who_said",
+          question: "What's the weirdest thing Jackie has ever said to you?",
+          answer:
+            "Jackie doesn't register as weird to me anymore. In other words, I can't think of anything",
+          people: allPeople,
+          correctPerson: "Jenn",
+        },
+        {
+          id: 3(8),
+          type: "who_said",
+          question: "What's the weirdest thing Jackie has ever said to you?",
+          answer:
+            "Can't think of anything, which makes me sad. Maybe I'm just a bad listener.",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 3(9),
+          type: "who_said",
+          question: "What's the weirdest thing Jackie has ever said to you?",
+          answer:
+            "Who told you can fish here?  - I thought it was state property.  - State? This?! State?! Hit the road dude, this ain't no state property, this is private property! What is your name? I want your name so I can call down and see who gave u permission.  - My name-  - State property!  - My name's Herbert.  - Last name?  - Jones.  - Herbert Jones.  - Yeah.  - State? Ha! I ain't ever heard that before in my life.",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 3(10),
+          type: "who_said",
+          question: "What's the weirdest thing Jackie has ever said to you?",
+          answer:
+            "That she's definitely the most likely to be a communist (missing context, will not explain ☺️)",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 4(1),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer: "Welland 2023 - she looked so proud 🥹",
@@ -896,7 +1048,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 44,
+          id: 4(2),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -905,7 +1057,7 @@ body::after {
           correctPerson: "Kevin",
         },
         {
-          id: 444,
+          id: 4(3),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -914,7 +1066,7 @@ body::after {
           correctPerson: "Caitlyn",
         },
         {
-          id: 4444,
+          id: 4(4),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer: "Throwing her in the water after race course takedowns",
@@ -922,7 +1074,7 @@ body::after {
           correctPerson: "Arthur",
         },
         {
-          id: 44444,
+          id: 4(5),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -931,7 +1083,7 @@ body::after {
           correctPerson: "Kamini",
         },
         {
-          id: 444444,
+          id: 4(6),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -940,7 +1092,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 4444444,
+          id: 4(7),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer: "racing, eating, laughing, the 'tea'",
@@ -948,7 +1100,7 @@ body::after {
           correctPerson: "Leah",
         },
         {
-          id: 44444444,
+          id: 4(8),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -957,7 +1109,7 @@ body::after {
           correctPerson: "Simon",
         },
         {
-          id: 444444444,
+          id: 4(9),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer: "They way she hikes on mountains ",
@@ -965,7 +1117,7 @@ body::after {
           correctPerson: "Judy",
         },
         {
-          id: 4444444444,
+          id: 4(10),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -974,7 +1126,7 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 44444444444,
+          id: 4(11),
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
           answer:
@@ -983,7 +1135,79 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 5,
+          id: 4(12),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "Last c-lion oc session ❤️",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 4(13),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "Day 1 of Halifax in the pouring rain by the waterfront",
+          people: allPeople,
+          correctPerson: "Glory",
+        },
+        {
+          id: 4(14),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "The way she took care of all the FCRCC babies in Regina 2019",
+          people: allPeople,
+          correctPerson: "RC",
+        },
+        {
+          id: 4(15),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "Travelling with Jackie, you'll just see her darting from here to there, looking for hidden corners of treasures. That is my image of her in Italy.",
+          people: allPeople,
+          correctPerson: "Jenn",
+        },
+        {
+          id: 4(16),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "In general the competitive banter that Jackie encourages. Bring it on! I will definitely hulk my way past you someday - must strive to be better than the best!",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 4(17),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "Everyday",
+          people: allPeople,
+          correctPerson: "Yibo",
+        },
+        {
+          id: 4(18),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "Jackie was a good and supportive coach. All the yelling and screaming and disappointed helped made me a better paddler.",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 4(19),
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "Probably bonding about our Asian parents in the park by the village, or my bach party in Toronto ",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 5(1),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -992,7 +1216,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 55,
+          id: 5(2),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1002,7 +1226,7 @@ body::after {
           correctPerson: "Kevin",
         },
         {
-          id: 555,
+          id: 5(3),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1012,7 +1236,7 @@ body::after {
           correctPerson: "Caitlyn",
         },
         {
-          id: 5555,
+          id: 5(4),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1021,7 +1245,7 @@ body::after {
           correctPerson: "Arthur",
         },
         {
-          id: 55555,
+          id: 5(5),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1031,7 +1255,7 @@ body::after {
           correctPerson: "Kamini",
         },
         {
-          id: 555555,
+          id: 5(6),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1041,7 +1265,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 5555555,
+          id: 5(7),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1051,7 +1275,7 @@ body::after {
           correctPerson: "Simon",
         },
         {
-          id: 55555555,
+          id: 5(8),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1060,7 +1284,7 @@ body::after {
           correctPerson: "Judy",
         },
         {
-          id: 555555555,
+          id: 5(9),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1070,7 +1294,7 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 5555555555,
+          id: 5(10),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1080,7 +1304,7 @@ body::after {
           correctPerson: "Angelli",
         },
         {
-          id: 55555555555,
+          id: 5(11),
           type: "who_said",
           question:
             "What's something Jackie did for you that you'll never forget?",
@@ -1090,7 +1314,77 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 6,
+          id: 5(12),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "Be a captain",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 5(13),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "“Why are other people's mental health non-negotiable, but your's is”",
+          people: allPeople,
+          correctPerson: "Glory",
+        },
+        {
+          id: 5(14),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "I can't think of a specific, but Jackie will always have her friends' backs and as her friend, I know I have her support and love always",
+          people: allPeople,
+          correctPerson: "Jenn",
+        },
+        {
+          id: 5(15),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "It is not just one thing that comes to mind - In general, Jackie always shows up in our training supportive yet persistent in pushing me to my limits. She knows what to say to kick up my competitiveness and shows belief in my abilities.",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 5(16),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "Brining me to FCP and caring for me ",
+          people: allPeople,
+          correctPerson: "Yibo",
+        },
+        {
+          id: 5(17),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "Jackie saved me from a burning building",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 5(18),
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "Hiked with unfit me + encouraged me while we did the Grouse Grind even though we were both at our worst (teenagers, yuck) and we both knew she could have done it super fast if she'd left me",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 6(1),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "Dedicated, inspirational, JACKED 🤩 ",
@@ -1098,7 +1392,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 66,
+          id: 6(2),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "Fierce, strong, caring ",
@@ -1106,7 +1400,7 @@ body::after {
           correctPerson: "Kevin",
         },
         {
-          id: 666,
+          id: 6(3),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "1. FATHER FIGURE 2. reliable 3. Odd",
@@ -1114,7 +1408,7 @@ body::after {
           correctPerson: "Caitlyn",
         },
         {
-          id: 6666,
+          id: 6(4),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "Jackedie Jack Jaqueline",
@@ -1122,7 +1416,7 @@ body::after {
           correctPerson: "Arthur",
         },
         {
-          id: 66666,
+          id: 6(5),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "Very frequent giggles",
@@ -1130,7 +1424,7 @@ body::after {
           correctPerson: "Kamini",
         },
         {
-          id: 666666,
+          id: 6(6),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "Mess. Mo. Mao.",
@@ -1138,7 +1432,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 6666666,
+          id: 6(7),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "animated, voracious, tea-spiller",
@@ -1146,7 +1440,7 @@ body::after {
           correctPerson: "Leah",
         },
         {
-          id: 66666666,
+          id: 6(8),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "Cackle. Competitive. Considerate",
@@ -1154,7 +1448,7 @@ body::after {
           correctPerson: "Simon",
         },
         {
-          id: 666666666,
+          id: 6(9),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer: "😈🤡💪",
@@ -1162,7 +1456,7 @@ body::after {
           correctPerson: "Judy",
         },
         {
-          id: 6666666666,
+          id: 6(10),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer:
@@ -1171,7 +1465,7 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 66666666666,
+          id: 6(11),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer:
@@ -1180,7 +1474,7 @@ body::after {
           correctPerson: "Angelli",
         },
         {
-          id: 666666666666,
+          id: 6(12),
           type: "who_said",
           question: "Describe Jackie in three words.",
           answer:
@@ -1189,7 +1483,79 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 7,
+          id: 6(13),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Strong funny direct",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 6(14),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Fridge. Spiderweb. Piglet. No explanations will be given.",
+          people: allPeople,
+          correctPerson: "Glory",
+        },
+        {
+          id: 6(15),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "organized, caring, energetic",
+          people: allPeople,
+          correctPerson: "RC",
+        },
+        {
+          id: 6(16),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Most extroverted introvert",
+          people: allPeople,
+          correctPerson: "Jenn",
+        },
+        {
+          id: 6(17),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Supportive, Strong, Competitive",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 6(18),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Thoughtful, Strong(physical and mental), Jackie",
+          people: allPeople,
+          correctPerson: "Yibo",
+        },
+        {
+          id: 6(19),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Resilient, coffee-addict, gremlin",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 6(20),
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "Authentic, generous, piquant",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 7(1),
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
           answer: "Bring Me To Life - Evanescence (cause she never wakes up) ",
@@ -1197,7 +1563,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 77,
+          id: 7(2),
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
           answer:
@@ -1206,7 +1572,7 @@ body::after {
           correctPerson: "Caitlyn",
         },
         {
-          id: 777,
+          id: 7(3),
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
           answer: "I'll make a man out of you. LOL",
@@ -1214,7 +1580,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 777,
+          id: 7(4),
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
           answer: "Best Day of my Life - American Authors",
@@ -1222,7 +1588,7 @@ body::after {
           correctPerson: "Leah",
         },
         {
-          id: 7777,
+          id: 7(5),
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
           answer:
@@ -1231,7 +1597,7 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 77777,
+          id: 7(6),
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
           answer:
@@ -1240,7 +1606,70 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 8,
+          id: 7(7),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "BBA by Paris Hilton and Megan Thee Stallion",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 7(8),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "doing my best by Hazlett",
+          people: allPeople,
+          correctPerson: "Glory",
+        },
+        {
+          id: 7(9),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "baby shark",
+          people: allPeople,
+          correctPerson: "RC",
+        },
+        {
+          id: 7(10),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "Mama Didn't Raise No - Aston 🤣🤣",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 7(11),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "Sunday Morning by Maroon 5",
+          people: allPeople,
+          correctPerson: "Yibo",
+        },
+        {
+          id: 7(12),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "GG EZ",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 7(13),
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "American Pie - Don McLean",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 8(1),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer: "I collect fridge magnets 🧲",
@@ -1248,7 +1677,7 @@ body::after {
           correctPerson: "Leon",
         },
         {
-          id: 88,
+          id: 8(2),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer: "Idk my favorite color is blue",
@@ -1256,7 +1685,7 @@ body::after {
           correctPerson: "Caitlyn",
         },
         {
-          id: 888,
+          id: 8(3),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer: "That I know she secretly wants to join Juice",
@@ -1264,7 +1693,7 @@ body::after {
           correctPerson: "Arthur",
         },
         {
-          id: 8888,
+          id: 8(4),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer: "That my cats dislike her.",
@@ -1272,7 +1701,7 @@ body::after {
           correctPerson: "James",
         },
         {
-          id: 8888,
+          id: 8(5),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer:
@@ -1281,7 +1710,7 @@ body::after {
           correctPerson: "Simon",
         },
         {
-          id: 88888,
+          id: 8(6),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer:
@@ -1290,7 +1719,7 @@ body::after {
           correctPerson: "Judy",
         },
         {
-          id: 888888,
+          id: 8(7),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer:
@@ -1299,7 +1728,7 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 8888888,
+          id: 8(8),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer:
@@ -1308,7 +1737,7 @@ body::after {
           correctPerson: "Angelli",
         },
         {
-          id: 88888888,
+          id: 8(9),
           type: "who_said",
           question: "What's something Jackie probably doesn't know about you?",
           answer:
@@ -1317,16 +1746,70 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 9,
+          id: 8(10),
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "That I'm currently taking dance classes",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 8(11),
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "It was probably a love/hate start of our friendship in the beginning. Jackie 'took' my spot on the national team when she came in late in the process with her incredible lats. But seriously, no hate. I didn't have a chance. And Jackie's happy disposition and tea spilling abilities with utmost animation, quickly won me over.",
+          people: allPeople,
+          correctPerson: "Jenn",
+        },
+        {
+          id: 8(12),
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "I definitely cannot eat as much as Jackie does! Haha",
+          people: allPeople,
+          correctPerson: "Margaret",
+        },
+        {
+          id: 8(13),
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "That I have rizz",
+          people: allPeople,
+          correctPerson: "Yibo",
+        },
+        {
+          id: 8(14),
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "I'm diamond in league of legends",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 8(15),
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "That I really look up to her for how well adjusted she is, how steady and self-aware she's been as a person for as long as I've known her (almost our whole lives), and how much I value our friendship/sisterhood :)",
+          people: allPeople,
+          correctPerson: "Caron",
+        },
+        {
+          id: 9(1),
           type: "who_said",
           question:
-            "Is it true that you're a korean princess? I have photo evidence!",
-          answer: "",
+            "Is it true that you're a korean princess?",
+          answer: "I have photo evidence!",
           people: allPeople,
           correctPerson: "James",
         },
         {
-          id: 99,
+          id: 9(2),
           type: "who_said",
           question: "What's one of Jackie's team nicknames?",
           answer: "Hamster or bad hamster. I think there are more.",
@@ -1334,7 +1817,7 @@ body::after {
           correctPerson: "Leah",
         },
         {
-          id: 999,
+          id: 9(3),
           type: "who_said",
           question: "Would you rather adopt Pippin or Jasper?",
           answer: "",
@@ -1342,7 +1825,7 @@ body::after {
           correctPerson: "Simon",
         },
         {
-          id: 9999,
+          id: 9(4),
           type: "who_said",
           question: "Happy Birthday Jacqueline! :D Let's chill!",
           answer: "",
@@ -1350,15 +1833,15 @@ body::after {
           correctPerson: "Elaine(LL)",
         },
         {
-          id: 9999,
+          id: 9(5),
           type: "who_said",
-          question: "who got cody and jackie together? ME I LIKE TO SAY I PLANTED THAT SEED  IN HER HEAD AND LOOK AT WHERE YOU GUYS ARE NOW HEHEHEHEHEHEHEHEHEHEHEHEHEHEHE",
-          answer: "",
+          question: "who got cody and jackie together?",
+          answer: "ME I LIKE TO SAY I PLANTED THAT SEED  IN HER HEAD AND LOOK AT WHERE YOU GUYS ARE NOW HEHEHEHEHEHEHEHEHEHEHEHEHEHEHE",
           people: allPeople,
           correctPerson: "Angelli",
         },
         {
-          id: 99999,
+          id: 9(6),
           type: "who_said",
           question: "what's a green flag",
           answer: "making a personalized app for one's bday",
@@ -1366,13 +1849,55 @@ body::after {
           correctPerson: "Jason Wen",
         },
         {
-          id: 0,
+          id: 9(7),
+          type: "who_said",
+          question: "Favourite Jackie Quote:",
+          answer: "That sounds like a skill issue.",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 9(8),
+          type: "who_said",
+          question: "Iconic Recurring Quotes:",
+          answer: "“Don't be a bitch”, “Are you guys tired”",
+          people: allPeople,
+          correctPerson: "Glory",
+        },
+        {
+          id: 9(9),
+          type: "who_said",
+          question: "What monkeys call business, horses call play",
+          answer: "",
+          people: allPeople,
+          correctPerson: "John",
+        },
+        {
+          id: 10(1),
           type: "who_said",
           question:
             "Not really a question, but i dare you to run a full marathon next year.",
           answer: "",
           people: allPeople,
           correctPerson: "James",
+        },
+        {
+          id: 10(2),
+          type: "who_said",
+          question:
+            "F*** Marry Kill",
+          answer: "Dragon boat, OC 1, OC 6???",
+          people: allPeople,
+          correctPerson: "Derek",
+        },
+        {
+          id: 10(3),
+          type: "who_said",
+          question:
+            "Early bird gets the worm, second mouse gets the cheese",
+          answer: "",
+          people: allPeople,
+          correctPerson: "John",
         },
       ];
       let questions = loadQuestions(),
