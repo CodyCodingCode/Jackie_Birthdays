@@ -523,7 +523,7 @@
       </header>
       <main id="app"></main>
       <div class="footer">
-        Made for one birthday girl. Best enjoyed with friends' receipts.
+        Made for one special birthday girl.
       </div>
     </div>
     <div id="toast" class="toast hidden"></div>
@@ -756,6 +756,17 @@
             "I admire that Jackie has so much knowledge about things she is passionate about",
           ],
           correct: 0,
+        },
+        {
+          id: 1-16,
+          type: "truthlie",
+          from: "Jenny",
+          options: [
+            "I was intimidated by you in the past",
+            "We've taken classes together in uni",
+            "We've mailed each other Christmas cards",
+          ],
+          correct: 1,
         },
         {
           id: 2-1,
@@ -1026,6 +1037,15 @@
           correctPerson: "Ariel",
         },
         {
+          id: 3-15,
+          type: "who_said",
+          question: "What's the weirdest thing Jackie has ever said to you?",
+          answer:
+            "...just weird animal noises LOL i can't even remember the context anymore.",
+          people: allPeople,
+          correctPerson: "Jenny",
+        },
+        {
           id: 4-1,
           type: "who_said",
           question: "What's your favorite memory with Jackie?",
@@ -1227,6 +1247,15 @@
             "Being bus ride buddies after very wet and cold practices. Suffered together.",
           people: allPeople,
           correctPerson: "Ariel",
+        },
+        {
+          id: 4-24,
+          type: "who_said",
+          question: "What's your favorite memory with Jackie?",
+          answer:
+            "All the bubble tea runs in first and second year of uni, RIP Pearl Fever. :'). OR that one time we actually made girl's night out happen and we ended up at Starbucks at like 11pm?? ",
+          people: allPeople,
+          correctPerson: "Jenny",
         },
         {
           id: 5-1,
@@ -1436,6 +1465,16 @@
           correctPerson: "Ariel",
         },
         {
+          id: 5-21,
+          type: "who_said",
+          question:
+            "What's something Jackie did for you that you'll never forget?",
+          answer:
+            "We had a marriage agreement in case I didn't get my PR LOL<3 love you",
+          people: allPeople,
+          correctPerson: "Jenny",
+        },
+        {
           id: 6-1,
           type: "who_said",
           question: "Describe Jackie in three words.",
@@ -1643,6 +1682,15 @@
           correctPerson: "Hailey",
         },
         {
+          id: 6-25,
+          type: "who_said",
+          question: "Describe Jackie in three words.",
+          answer:
+            "STRONG. INDEPENDENT. WOMAN.",
+          people: allPeople,
+          correctPerson: "Jenny",
+        },
+        {
           id: 7-1,
           type: "who_said",
           question: "What's a song that reminds you of Jackie?",
@@ -1773,6 +1821,15 @@
             "Shadow - Seventeen (because her and I were crashing out over Mingyu :D); This Hell - Rina Sawayama (I think this one was discovered on Jackie's Release Radar on spotify and since then, I've been following her release radar because she has some awesome music taste)",
           people: allPeople,
           correctPerson: "Hailey",
+        },
+        {
+          id: 7-16,
+          type: "who_said",
+          question: "What's a song that reminds you of Jackie?",
+          answer:
+            "FEMALE PRESIDENT - GIRL'S DAY",
+          people: allPeople,
+          correctPerson: "Jenny",
         },
         {
           id: 8-1,
@@ -1922,6 +1979,15 @@
             "There isn't much that I can think of... I share almost everything with her + Elaine and Sarina LOL",
           people: allPeople,
           correctPerson: "Hailey",
+        },
+        {
+          id: 8-17,
+          type: "who_said",
+          question: "What's something Jackie probably doesn't know about you?",
+          answer:
+            "Hmm my job maybe? 😂 Like my actual job title.",
+          people: allPeople,
+          correctPerson: "Jenny",
         },
         {
           id: 9-1,
@@ -2201,7 +2267,7 @@
         const app = document.getElementById("app");
         if (screen === "home") {
           // CHANGED: the first button's action is now "love" (opens the popup)
-          app.innerHTML = `<section class="card hero"><div class="heart">♡</div><div class="eyebrow">Birthday edition</div><h1>Happy 31st Birthday!</h1><p>Two truths and a lie. Friends' receipts. Questionable memories. How well do you really know your people?</p><div class="actions two">${btn("You're the best boyfriend ever 😇", "love")}<button class="secondary" id="happyPathButton" data-action="happy">You're annoying😤</button></div><p class="small" id="happyHint">Choose wisely. One of these options is lying to you.</p></section>`;
+          app.innerHTML = `<section class="card hero"><div class="heart">♡</div><div class="eyebrow">31st edition</div><h1>Happy Birthday!</h1><p>Two truths and a lie. Friends' receipts. Questionable memories. How well do you really know your people?</p><div class="actions two">${btn("You're the best boyfriend ever 😇", "love")}<button class="secondary" id="happyPathButton" data-action="happy">You're annoying😤</button></div><p class="small" id="happyHint">Choose wisely. One of these options is lying to you.</p></section>`;
         }
         if (screen === "add") {
           app.innerHTML = `<section class="card"><button class="quiet" data-action="home">← Home</button><div class="eyebrow">Friend submission</div><h2>Add a question about her</h2><p>Make it funny, specific, sweet, or slightly embarrassing. She will answer it herself.</p><form id="factForm"><div class="field"><label>Your name or nickname</label><input name="from" placeholder="e.g. Sarah" required maxlength="50"></div><div class="field"><label>Question</label><textarea name="question" placeholder="e.g. What's her most irrational fear?" required maxlength="240"></textarea></div><h3>Answer options</h3>${[0, 1, 2, 3].map((i) => `<div class="field"><label>Option ${"ABCD"[i]}</label><input name="opt${i}" placeholder="${["First answer", "Second answer", "Third answer", "Fourth answer"][i]}" required maxlength="120"></div>`).join("")}<div class="field"><label>Which answer is correct?</label><select name="correct">${["A", "B", "C", "D"].map((v, i) => `<option value="${i}">${v}</option>`).join("")}</select></div><div class="field"><label>Story / explanation (optional)</label><textarea name="explanation" placeholder="Add context to reveal after she answers." maxlength="400"></textarea></div><button class="primary" type="submit">Add to this quiz</button></form><p class="small">Prototype note: this saves to the current browser only, not to a shared link.</p></section>`;
