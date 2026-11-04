@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Her Lore — Birthday Quiz</title>
+    <title>Jackiennaire — Birthday Quiz</title>
     <style>
       :root {
         --bg: #0b1220;
@@ -23,103 +23,74 @@
         box-sizing: border-box;
       }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  position: relative;
-  isolation: isolate;
-  overflow-x: hidden;
-  background:
-    radial-gradient(ellipse at 50% 110%, #35205f 0%, transparent 55%),
-    radial-gradient(ellipse at 15% 15%, #24134c 0%, transparent 45%),
-    radial-gradient(ellipse at 85% 20%, #172b55 0%, transparent 45%),
-    #080817;
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-  color: var(--text);
-}
+      body {
+        margin: 0;
+        min-height: 100vh;
+        position: relative;
+        isolation: isolate;
+        overflow-x: hidden;
+        background:
+          radial-gradient(ellipse at 50% 110%, #35205f 0%, transparent 55%),
+          radial-gradient(ellipse at 15% 15%, #24134c 0%, transparent 45%),
+          radial-gradient(ellipse at 85% 20%, #172b55 0%, transparent 45%),
+          #080817;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--text);
+      }
 
-/* Moving concert spotlights */
-body::before {
-  content: "";
-  position: fixed;
-  inset: -30%;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    linear-gradient(
-      115deg,
-      transparent 35%,
-      rgba(244, 114, 182, 0.18) 45%,
-      transparent 55%
-    ),
-    linear-gradient(
-      245deg,
-      transparent 35%,
-      rgba(96, 165, 250, 0.17) 45%,
-      transparent 55%
-    ),
-    linear-gradient(
-      180deg,
-      transparent 35%,
-      rgba(192, 132, 252, 0.12) 50%,
-      transparent 65%
-    );
-  filter: blur(20px);
-  animation: stageLights 12s ease-in-out infinite alternate;
-}
+      /* Moving concert spotlights */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: -30%;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          linear-gradient(115deg, transparent 35%, rgba(244, 114, 182, 0.18) 45%, transparent 55%),
+          linear-gradient(245deg, transparent 35%, rgba(96, 165, 250, 0.17) 45%, transparent 55%),
+          linear-gradient(180deg, transparent 35%, rgba(192, 132, 252, 0.12) 50%, transparent 65%);
+        filter: blur(20px);
+        animation: stageLights 12s ease-in-out infinite alternate;
+      }
 
-/* Tiny floating stage lights */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image:
-    radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 2px),
-    radial-gradient(circle, rgba(244,114,182,.8) 1px, transparent 2px),
-    radial-gradient(circle, rgba(147,197,253,.8) 1px, transparent 2px);
-  background-size: 110px 130px, 170px 190px, 230px 210px;
-  background-position: 0 0, 50px 80px, 100px 30px;
-  opacity: 0.35;
-  animation: sparkle 5s ease-in-out infinite alternate;
-}
+      /* Tiny floating stage lights */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background-image:
+          radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 2px),
+          radial-gradient(circle, rgba(244,114,182,.8) 1px, transparent 2px),
+          radial-gradient(circle, rgba(147,197,253,.8) 1px, transparent 2px);
+        background-size: 110px 130px, 170px 190px, 230px 210px;
+        background-position: 0 0, 50px 80px, 100px 30px;
+        opacity: 0.35;
+        animation: sparkle 5s ease-in-out infinite alternate;
+      }
 
-@keyframes stageLights {
-  0% {
-    transform: translateX(-5%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(4%) rotate(3deg);
-  }
-  100% {
-    transform: translateX(-2%) rotate(-3deg);
-  }
-}
+      @keyframes stageLights {
+        0% { transform: translateX(-5%) rotate(-5deg); }
+        50% { transform: translateX(4%) rotate(3deg); }
+        100% { transform: translateX(-2%) rotate(-3deg); }
+      }
 
-@keyframes sparkle {
-  from { opacity: 0.15; }
-  to { opacity: 0.5; }
-}
+      @keyframes sparkle {
+        from { opacity: 0.15; }
+        to { opacity: 0.5; }
+      }
 
-@media (prefers-reduced-motion: reduce) {
-  body::before,
-  body::after {
-    animation: none;
-  }
-}
+      @media (prefers-reduced-motion: reduce) {
+        body::before,
+        body::after {
+          animation: none;
+        }
+      }
 
-      button,
-      input,
-      textarea,
-      select {
+      button, input, textarea, select {
         font: inherit;
       }
 
@@ -129,19 +100,11 @@ body::after {
         border-radius: 14px;
         padding: 13px 16px;
         font-weight: 750;
-        transition:
-          transform 0.12s,
-          opacity 0.12s;
+        transition: transform 0.12s, opacity 0.12s;
       }
 
-      button:active {
-        transform: scale(0.985);
-      }
-
-      button:disabled {
-        opacity: 0.4;
-        cursor: not-allowed;
-      }
+      button:active { transform: scale(0.985); }
+      button:disabled { opacity: 0.4; cursor: not-allowed; }
 
       .primary {
         background: linear-gradient(135deg, var(--pink), var(--pink2));
@@ -206,11 +169,7 @@ body::after {
       }
 
       .card {
-        background: linear-gradient(
-          145deg,
-          rgba(24, 37, 58, 0.98),
-          rgba(17, 27, 43, 0.98)
-        );
+        background: linear-gradient(145deg, rgba(24, 37, 58, 0.98), rgba(17, 27, 43, 0.98));
         border: 1px solid var(--line);
         border-radius: 24px;
         padding: 22px;
@@ -242,25 +201,15 @@ body::after {
         margin: 12px 0;
       }
 
-      h2 {
-        font-size: 25px;
-        margin: 8px 0 12px;
-      }
-
-      h3 {
-        font-size: 17px;
-        margin: 0 0 8px;
-      }
+      h2 { font-size: 25px; margin: 8px 0 12px; }
+      h3 { font-size: 17px; margin: 0 0 8px; }
 
       p {
         line-height: 1.55;
         color: var(--muted);
       }
 
-      .stack {
-        display: grid;
-        gap: 12px;
-      }
+      .stack { display: grid; gap: 12px; }
 
       .actions {
         display: grid;
@@ -285,9 +234,7 @@ body::after {
         color: #dce4f2;
       }
 
-      input,
-      textarea,
-      select {
+      input, textarea, select {
         width: 100%;
         background: #0c1626;
         color: var(--text);
@@ -297,9 +244,7 @@ body::after {
         outline: none;
       }
 
-      input:focus,
-      textarea:focus,
-      select:focus {
+      input:focus, textarea:focus, select:focus {
         border-color: var(--pink);
       }
 
@@ -337,20 +282,9 @@ body::after {
         color: #fff;
       }
 
-      .option.selected {
-        border-color: var(--pink);
-        background: #39253e;
-      }
-
-      .option.correct {
-        border-color: var(--green);
-        background: #123c35;
-      }
-
-      .option.wrong {
-        border-color: var(--red);
-        background: #482834;
-      }
+      .option.selected { border-color: var(--pink); background: #39253e; }
+      .option.correct { border-color: var(--green); background: #123c35; }
+      .option.wrong { border-color: var(--red); background: #482834; }
 
       .bar {
         height: 6px;
@@ -373,9 +307,7 @@ body::after {
         align-items: center;
       }
 
-      .row > * {
-        flex: 1;
-      }
+      .row > * { flex: 1; }
 
       .fact {
         border: 1px solid var(--line);
@@ -394,10 +326,7 @@ body::after {
         margin-bottom: 8px;
       }
 
-      .answerkey {
-        color: var(--green);
-        font-size: 13px;
-      }
+      .answerkey { color: var(--green); font-size: 13px; }
 
       .notice {
         border: 1px solid #58445d;
@@ -416,9 +345,7 @@ body::after {
         line-height: 1.1;
       }
 
-      .hidden {
-        display: none !important;
-      }
+      .hidden { display: none !important; }
 
       .footer {
         text-align: center;
@@ -441,9 +368,8 @@ body::after {
         z-index: 5;
       }
 
-      .card:has(.arena-artifact) {
-        position: relative;
-      }
+      .card:has(.arena-artifact) { position: relative; }
+
       .arena-artifact-wrap {
         position: absolute;
         z-index: 3;
@@ -452,9 +378,9 @@ body::after {
         opacity: 0.58;
         transition: opacity 0.15s ease;
       }
-      .arena-artifact-wrap:hover {
-        opacity: 1;
-      }
+
+      .arena-artifact-wrap:hover { opacity: 1; }
+
       .arena-artifact {
         position: relative;
         display: grid;
@@ -468,14 +394,14 @@ body::after {
         cursor: pointer;
         background: transparent;
         box-shadow: 0 3px 9px #0005;
-        transition:
-          transform 0.12s ease,
-          filter 0.12s ease;
+        transition: transform 0.12s ease, filter 0.12s ease;
       }
+
       .arena-artifact:hover {
         transform: translateY(-3px) rotate(-2deg);
         filter: brightness(1.2);
       }
+
       .arena-artifact img {
         display: block;
         width: 100%;
@@ -484,26 +410,19 @@ body::after {
         border-radius: 50%;
         border: 1px solid #ffffffaa;
       }
+
       .arena-artifact.destroying {
         animation: arenaSmash 0.45s ease-in forwards;
         pointer-events: none;
       }
+
       @keyframes arenaSmash {
-        0% {
-          transform: scale(1) rotate(0);
-        }
-        25% {
-          transform: scale(1.15) rotate(-8deg);
-        }
-        55% {
-          transform: scale(0.8) rotate(9deg);
-          filter: brightness(2);
-        }
-        100% {
-          transform: scale(0) rotate(35deg);
-          opacity: 0;
-        }
+        0% { transform: scale(1) rotate(0); }
+        25% { transform: scale(1.15) rotate(-8deg); }
+        55% { transform: scale(0.8) rotate(9deg); filter: brightness(2); }
+        100% { transform: scale(0) rotate(35deg); opacity: 0; }
       }
+
       .artifact-sparks {
         position: absolute;
         inset: -12px;
@@ -511,16 +430,12 @@ body::after {
         font-size: 17px;
         animation: sparkBurst 0.5s ease-out forwards;
       }
+
       @keyframes sparkBurst {
-        from {
-          transform: scale(0.25);
-          opacity: 1;
-        }
-        to {
-          transform: scale(1.8) translateY(-12px);
-          opacity: 0;
-        }
+        from { transform: scale(0.25); opacity: 1; }
+        to { transform: scale(1.8) translateY(-12px); opacity: 0; }
       }
+
       .modal {
         position: fixed;
         inset: 0;
@@ -530,6 +445,7 @@ body::after {
         place-items: center;
         padding: 20px;
       }
+
       .modal-card {
         position: relative;
         max-width: 560px;
@@ -539,15 +455,16 @@ body::after {
         border-radius: 22px;
         padding: 0;
       }
+
       .modal-card .row {
         position: absolute;
         top: 8px;
         right: 8px;
         z-index: 2;
       }
-      .modal-card .row h2 {
-        display: none;
-      }
+
+      .modal-card .row h2 { display: none; }
+
       .modal-card .row button {
         min-width: 36px;
         width: 36px;
@@ -559,11 +476,13 @@ body::after {
         border: 1px solid #fff7;
         font-size: 0;
       }
+
       .modal-card .row button:after {
         content: "×";
         font-size: 25px;
         line-height: 1;
       }
+
       .modal-card img {
         display: block;
         width: 100%;
@@ -572,34 +491,22 @@ body::after {
         border-radius: 14px;
         box-shadow: 0 18px 70px #0008;
       }
-      #artifactCaption {
-        display: none;
-      }
+
+      #artifactCaption { display: none; }
+
       .happy-runaway {
         position: fixed;
         z-index: 20;
         white-space: nowrap;
-        transition:
-          left 0.18s ease,
-          top 0.18s ease,
-          width 0.18s ease,
-          padding 0.18s ease,
-          font-size 0.18s ease;
+        transition: left 0.18s ease, top 0.18s ease, width 0.18s ease,
+          padding 0.18s ease, font-size 0.18s ease;
         max-width: calc(100vw - 12px);
       }
 
       @media (min-width: 600px) {
-        .actions.two {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .card {
-          padding: 26px;
-        }
-
-        .hero {
-          padding: 44px 32px;
-        }
+        .actions.two { grid-template-columns: 1fr 1fr; }
+        .card { padding: 26px; }
+        .hero { padding: 44px 32px; }
       }
     </style>
   </head>
@@ -609,7 +516,7 @@ body::after {
       <header class="top">
         <div class="logo">♡</div>
         <div>
-          <div class="brand">HER LORE</div>
+          <div class="brand">Jackiennaire</div>
           <div class="subbrand">The birthday quiz</div>
         </div>
         <div class="pill" id="countPill">0 questions</div>
@@ -640,6 +547,18 @@ body::after {
         <img id="artifactImage" alt="A photo memory" />
       </div>
     </div>
+
+    <!-- NEW: popup shown after clicking "You're the best boyfriend ever" -->
+    <div id="loveModal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="card hero" style="max-width: 420px; width: 100%">
+        <div class="heart">🥹</div>
+        <h2>aww you really think that?</h2>
+        <div class="actions">
+          <button class="primary" data-action="start">Yes, obviously 💕</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       const KEY = "her-lore-questions-v2";
       const allPeople = [
@@ -663,7 +582,7 @@ body::after {
         "Kelvin",
         "Leah",
         "Leon",
-        "Margaret", 
+        "Margaret",
         "Meaghan",
         "Nicole",
         "Oliver",
@@ -672,7 +591,7 @@ body::after {
         "Sarina",
         "Simon",
         "Scully",
-        "Yibo"
+        "Yibo",
       ];
 
       const starter = [
@@ -1900,6 +1819,7 @@ body::after {
           correctPerson: "John",
         },
       ];
+
       let questions = loadQuestions(),
         usedArtifacts = new Set(),
         answers = {},
@@ -2066,7 +1986,8 @@ body::after {
         save();
         const app = document.getElementById("app");
         if (screen === "home") {
-          app.innerHTML = `<section class="card hero"><div class="heart">♡</div><div class="eyebrow">Birthday edition</div><h1>Choose your destiny</h1><p>Two truths and a lie. Friends' receipts. Questionable memories. How well do you really know your people?</p><div class="actions two">${btn("Ragebait me 😈 →", "start")}<button class="secondary" id="happyPathButton" data-action="happy">Happy path 😇</button></div><p class="small" id="happyHint">Choose wisely. One of these options is lying to you.</p></section>`;
+          // CHANGED: the first button's action is now "love" (opens the popup)
+          app.innerHTML = `<section class="card hero"><div class="heart">♡</div><div class="eyebrow">Birthday edition</div><h1>Happy 31st Birthday!</h1><p>Two truths and a lie. Friends' receipts. Questionable memories. How well do you really know your people?</p><div class="actions two">${btn("You're the best boyfriend ever 😇", "love")}<button class="secondary" id="happyPathButton" data-action="happy">You're annoying😤</button></div><p class="small" id="happyHint">Choose wisely. One of these options is lying to you.</p></section>`;
         }
         if (screen === "add") {
           app.innerHTML = `<section class="card"><button class="quiet" data-action="home">← Home</button><div class="eyebrow">Friend submission</div><h2>Add a question about her</h2><p>Make it funny, specific, sweet, or slightly embarrassing. She will answer it herself.</p><form id="factForm"><div class="field"><label>Your name or nickname</label><input name="from" placeholder="e.g. Sarah" required maxlength="50"></div><div class="field"><label>Question</label><textarea name="question" placeholder="e.g. What's her most irrational fear?" required maxlength="240"></textarea></div><h3>Answer options</h3>${[0, 1, 2, 3].map((i) => `<div class="field"><label>Option ${"ABCD"[i]}</label><input name="opt${i}" placeholder="${["First answer", "Second answer", "Third answer", "Fourth answer"][i]}" required maxlength="120"></div>`).join("")}<div class="field"><label>Which answer is correct?</label><select name="correct">${["A", "B", "C", "D"].map((v, i) => `<option value="${i}">${v}</option>`).join("")}</select></div><div class="field"><label>Story / explanation (optional)</label><textarea name="explanation" placeholder="Add context to reveal after she answers." maxlength="400"></textarea></div><button class="primary" type="submit">Add to this quiz</button></form><p class="small">Prototype note: this saves to the current browser only, not to a shared link.</p></section>`;
@@ -2137,13 +2058,19 @@ body::after {
           }, 320);
           return;
         }
-        if (e.target.id === "artifactModal") {
+        // CHANGED: tapping the dark backdrop closes either modal
+        if (e.target.id === "artifactModal" || e.target.id === "loveModal") {
           e.target.classList.add("hidden");
           return;
         }
         const a = e.target.closest("[data-action]");
         if (a) {
           const x = a.dataset.action;
+          // NEW: open the "aww" popup
+          if (x === "love") {
+            document.getElementById("loveModal").classList.remove("hidden");
+            return;
+          }
           if (x === "happy") {
             happyClicks++;
             const b = document.getElementById("happyPathButton"),
@@ -2152,7 +2079,7 @@ body::after {
               if (b) b.remove();
               if (hint)
                 hint.textContent =
-                  "The happy path has left the chat. There is only rage now. 😈";
+                  "👉👈I guess there's only one option now🥺";
               return;
             }
             if (b) {
@@ -2177,14 +2104,8 @@ body::after {
               b.style.fontSize =
                 Math.max(5, 16 * Math.pow(0.78, happyClicks)) + "px";
               b.classList.add("happy-runaway");
-              // b.textContent =
-              //   happyClicks >= 6
-              //     ? "😇"
-              //     : `Happy path (${8 - happyClicks} chances left)`;
             }
-            if (hint)
-              hint.textContent =
-                "It gets smaller every time. You can stop whenever you want. (You will not.)";
+            if (hint) hint.textContent = "Do you not love me anymore🥺";
             return;
           }
           if (x === "close-artifact") {
@@ -2195,6 +2116,8 @@ body::after {
           if (x === "add") screen = "add";
           if (x === "manage") screen = "manage";
           if (x === "start") {
+            // NEW: close the popup when the quiz starts
+            document.getElementById("loveModal").classList.add("hidden");
             happyClicks = 0;
             index = 0;
             playQuestions = pickRandomHalf();
@@ -2326,7 +2249,7 @@ body::after {
               render();
               toast("Questions imported");
             } catch {
-              alert("That file does not look like a Her Lore question backup.");
+              alert("That file does not look like a Jackiennaire question backup.");
             }
           };
           reader.readAsText(e.target.files[0]);
